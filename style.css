@@ -1,0 +1,115 @@
+body{
+    font-family: "poppins", sans-serif;
+}
+
+/*Reboot*/
+.bg-blue{
+    background-color: #181d50;
+}
+.blue-text{
+    color: #181d50 !important;
+}
+
+/* Navbar style*/
+.nav-link{
+    position: relative;
+    color: #181d50;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #181d50;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active{
+    color: #181d50 !important;
+    font-weight: 500;
+}
+
+.btn-outline-success{
+    color: #181d50;
+    border-color: #181d50;
+    border-width: 2px;
+    font-weight: 500;
+}
+
+.btn-outline-success:hover{
+    background-color: #181d50;
+    border-color: #181d50;
+}
+
+.btn-outline-success:active{
+    background-color: #181d50 !important;
+    border-color: #181d50 !important;
+}
+
+.navbar-toggler{
+    
+    color: #181d50;
+    border-color: #181d50;
+    border-width: 2px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23181d50' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Offcanvas style */
+.btn-close{
+    filter: brightness(0) saturate(100%) invert(15%) sepia(8%) saturate(6482%) hue-rotate(204deg) brightness(91%) contrast(105%);
+    opacity: 1;
+}
+
+.offcanvas-title{
+    color: #181d50;
+    font-weight: 600;
+}
+
+/* Hero style */
+.lead{
+    color: #181d50 !important;
+}
+
+.btn-primary{
+    background-color: #181d50;
+    border-color: #181d50;
+}
+
+.btn-primary:hover{
+    background-color: #1746a2;
+}
+
+.btn-primary:active{
+    background-color: #1746a2 !important;
+}
+
+.diagonal-shape {
+    width: 80vw;
+    height: 60vh;
+    background-color: #1E266E; /* Color of the diagonal shape */
+    clip-path: polygon(0 100%, 100% 100%, 100% 0); /* Creates the diagonal cut */
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+.diagonal-shape::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Background color matching the top triangle */
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    transform: rotate(90deg);
+    z-index: -1;
+}
