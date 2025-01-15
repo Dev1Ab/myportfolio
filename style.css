@@ -20,7 +20,7 @@ body{
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 1;
     width: 0;
     height: 2px;
     background: #181d50;
@@ -92,24 +92,77 @@ body{
     background-color: #1746a2 !important;
 }
 
-.diagonal-shape {
-    width: 80vw;
-    height: 60vh;
-    background-color: #1E266E; /* Color of the diagonal shape */
-    clip-path: polygon(0 100%, 100% 100%, 100% 0); /* Creates the diagonal cut */
+.triangle-par {
+    height: 80vh;
     position: relative;
-    transform: rotate(-45deg);
 }
 
-.diagonal-shape::before {
-    content: '';
+.triangle {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background-color: #000; /* Background color matching the top triangle */
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-    transform: rotate(90deg);
-    z-index: -1;
+    height: 40vh;
+    background-color: #181d50;
+    /* clip-path: polygon(0 75% ,90% 0, 100% 100%, 0 100%); */
+    /* clip-path: polygon(50% 0, 100% 100%, 0 100%); */
+    clip-path: polygon(90% 0, 100% 100%, 0 100%);
+}
+
+
+
+/* About style*/
+
+ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.img-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    background-color: #1746a2;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+}
+
+.html-bar{
+    background-color: #e34e26;
+}
+.css-bar{
+    background-color: #0f74b8;
+}
+.js-bar{
+    background-color: #dab92c;
+}
+.boots-bar{
+    background-color: #7411f7;
+}
+.php-bar{
+    background-color: #767bb3;
+}
+.react-bar{
+    background-color: #4ac8ee;
+}
+.laravel-bar{
+    background-color: #ca3d2b;
+}
+
+.two-color{
+    background: linear-gradient(to bottom, white 50%, #181d50 50%);
+}
+@media (max-width: 767px) {
+    .triangle {
+        display: none;
+    }
+    .about-img{
+        width: 30%;
+        display: flex;
+        justify-self: center;
+    }
 }
