@@ -20,7 +20,7 @@ body{
     content: '';
     position: absolute;
     left: 0;
-    bottom: 1;
+    bottom: 0;
     width: 0;
     height: 2px;
     background: #181d50;
@@ -112,10 +112,10 @@ body{
 
 /* About style*/
 
-ul li{
+/* ul{
     list-style-type: none;
     text-align: center;
-}
+} */
 
 .img-center{
     width: 100%;
@@ -156,6 +156,8 @@ ul li{
 .two-color{
     background: linear-gradient(to bottom, white 50%, #181d50 50%);
 }
+
+.img-hover{}
 @media (max-width: 767px) {
     .triangle {
         display: none;
