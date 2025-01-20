@@ -10,10 +10,23 @@ body{
     color: #181d50 !important;
 }
 
+.border-blue{
+    border-color: #181d50 !important;
+}
+
+.form-control:focus{
+    color: #181d50 !important;
+    border-color: #181d50 !important;
+    box-shadow: 0 0 0 0.25rem rgba(24, 29, 80, 0.9) !important;
+}
+.form-control::placeholder{
+    color: #181d50
+}
+
 /* Navbar style*/
 .nav-link{
     position: relative;
-    color: #181d50;
+    color: #181d50 !important;
 }
 
 .nav-link::after {
@@ -26,13 +39,19 @@ body{
     background: #181d50;
     transition: width 0.3s ease;
 }
+
+.nav-link:hover{
+    font-weight: bold;
+    color: #181d50;
+}
+
 .nav-link:hover::after {
     width: 100%;
 }
 
 .active{
     color: #181d50 !important;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .btn-outline-success{
@@ -75,9 +94,7 @@ body{
 }
 
 /* Hero style */
-.lead{
-    color: #181d50 !important;
-}
+
 
 .btn-primary{
     background-color: #181d50;
@@ -85,11 +102,15 @@ body{
 }
 
 .btn-primary:hover{
-    background-color: #1746a2;
+    color: #181d50;
+    border-color: #181d50;
+    border-width: 2px;
+    font-weight: 500;
+    background-color: #fff;
 }
 
 .btn-primary:active{
-    background-color: #1746a2 !important;
+    background-color: #fff !important;
 }
 
 .triangle-par {
@@ -157,14 +178,67 @@ body{
     background: linear-gradient(to bottom, white 50%, #181d50 50%);
 }
 
-.img-hover{}
+/* Projects Style */
+
+.card-img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(80%);
+  }
+
+.card:hover .card-img {
+    transform: scale(1.05);
+    filter: brightness(40%);
+}
+  
+.card-img-overlay {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.card:hover .card-img-overlay {
+    transform: translate(-50%, -90%);
+    opacity: 1;
+}
+
+/* mentorship style */
+
+.card-nobg{
+    background:none;
+}
+
+.form-control-white:focus{
+    box-shadow: 0 0 0 0.25rem rgb(23, 70, 162) !important;
+}
+
+/* Blog style */
+.icon-link{
+    text-decoration-color: #181d50;
+    -moz-text-decoration-color: #181d50;
+}
+
+
 @media (max-width: 767px) {
+    .triangle-par{
+        height: max-content;
+    }
     .triangle {
         display: none;
     }
+    .about{
+        display: flex;
+        justify-content: center;
+    }
     .about-img{
         width: 30%;
-        display: flex;
-        justify-self: center;
     }
+    
+    
+    /* projects style */
+
+    
+
 }

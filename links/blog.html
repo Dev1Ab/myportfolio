@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadeeq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"> -->`
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section class="bg-body-primary">
+        <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+              <img src="../images/logo.png" height="50" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav text-center justify-content-end flex-grow-1 pe-3 pb-2">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#articles">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./mentorship.html">Mentorship</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                  </ul>
+                  <div class=""> 
+                    <form role="search">
+                      <input class="form-control border-blue" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section class="triangle-par">
+      <div class="triangle-text px-4 py-5 my-5 text-center">
+        <h1 class="h1 fw-bold text-body-emphasis blue-text">Welcome to my blog</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="blue-text mb-4 lead">Explore, Learn, Build — Your Guide to Web Development.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 ">Explore</button>
+            <button type="button" class="btn btn-outline-success btn-lg px-4 " >Learn</button>
+          </div>
+        </div>
+      </div>
+      <div class="triangle"></div>
+    </section>
+
+
+    <section>
+      <h1 class="h2 p-5 text-center blue-text" id="articles">Articles</h1>
+      <div class="container-fluid p-5">
+        <div class="row row-cols-md-2 g-4">
+          <div class="col-md-6 blue-text">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-lg-8 p-3 d-flex flex-column position-static">
+                <h3 class="mb-0">Latest trend in IT</h3>
+                <div class="mb-1 text-body-secondary">Dec 01</div>
+                <p class="mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magnam eligendi eaque iste dicta commodi?</p>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link blue-text fst-italic">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img src="../images/photo1.jpg" class="w-100 h-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 blue-text">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-lg-8 p-3 d-flex flex-column position-static">
+                <h3 class="mb-0">Post title</h3>
+                <div class="mb-1 text-body-secondary">Nov 11</div>
+                <p class="mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magnam eligendi eaque iste dicta commodi?</p>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link blue-text fst-italic">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <img src="../images/photo1.jpg" class="w-100 h-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-fluid p-5">
+        <div class="row g-5">
+          <div class="col-md-8">
+            <article class="blog-post blue-text">
+              <h2 class="display-6 blue-text mb-1">Latest trend in IT 2025</h2>
+              <p class="blog-post-meta">January 1, 2025 by <a href="#">Sadeeq</a></p>
+      
+              <p>The world of IT is changing faster than ever, with new trends constantly emerging that are transforming how businesses operate and how we interact with technology. As we step into 2025, the IT landscape is more vibrant and dynamic, driven by breakthroughs in artificial intelligence, cloud services, cybersecurity, and more.</p>
+              <hr>
+              <ul class="list-unstyled">
+                <p>
+                  <li>
+                    1. AI and Machine Learning: Leading the Charge
+                  </li>
+                  <li>
+                    AI and machine learning have been at the forefront of technological innovation for years, but in 2025, they're reaching new heights. These technologies are no longer just tools for automating repetitive tasks; they are becoming central to strategic decision-making. Companies are using AI to analyze data, predict trends, customize customer interactions, and even revolutionize healthcare. Machine learning models are getting better at understanding nuanced human behaviors, making AI feel more intuitive and helpful.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    2. Edge Computing: Processing Power at the Source
+                  </li>
+                  <li>
+                    With the sheer volume of data being generated every day, edge computing is becoming essential. This approach processes data near its source rather than relying on centralized data centers, reducing delays and improving real-time analytics. In 2025, industries like healthcare, manufacturing, and autonomous vehicles are heavily investing in edge computing to ensure quicker and more reliable services.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    3. Cybersecurity Meets Quantum Computing
+                  </li>
+                  <li>
+                    Quantum computing is moving from theory to practice, with profound implications for cybersecurity. In 2025, the race is on to develop encryption methods that can withstand the power of quantum computers. This shift is transforming how we think about data security, with businesses and governments prioritizing quantum-resistant strategies to protect sensitive information.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    4. Sustainable IT: Going Green
+                  </li>
+                  <li>
+                    Sustainability is a major focus across all sectors, and IT is no exception. In 2025, there’s a growing push towards green computing, with energy-efficient data centers and renewable energy sources becoming the norm. Companies are adopting these sustainable practices not just to reduce their environmental impact but also to meet regulatory requirements and respond to consumer demands for eco-friendly operations.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    5. 5G and Beyond: Paving the Way for 6G
+                  </li>
+                  <li>
+                    The deployment of 5G networks has already revolutionized connectivity, offering faster speeds and lower latency. Now, in 2025, attention is turning towards 6G, which promises even greater improvements. This next-generation network is expected to drive advancements in virtual reality, telemedicine, and smart city infrastructures, setting the stage for a more connected world.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    Conclusion
+                  </li>
+                  <li>
+                    In 2025, the IT industry is buzzing with innovation. From AI and edge computing to sustainable IT and hyperautomation, these trends are not just shaping the future of technology—they're transforming how we live and work. Staying informed about these developments is key to harnessing their potential and thriving in this exciting new era.
+                  </li>
+                </p>
+              </ul>
+              
+            </article>
+      
+            <article class="blog-post blue-text">
+              <h2 class="display-6 blue-text mb-1">Latest Trends in Networking 2025</h2>
+              <p class="blog-post-meta">December 25, 2024 by <a href="#">Sadeeq</a></p>
+            
+              <p>The networking landscape is evolving rapidly, driven by advancements in technology that are reshaping how we connect and communicate. As we look ahead to 2025, several key trends are emerging that promise to redefine networking in exciting ways.</p>
+              <hr>
+              <ul class="list-unstyled">
+                <p>
+                  <li>
+                    1. Network Automation: Streamlining Operations
+                  </li>
+                  <li>
+                    Network automation is becoming a necessity as networks grow in complexity. In 2025, the use of AI and machine learning to automate network management tasks is becoming widespread, enabling faster, more reliable operations. This trend is helping businesses reduce manual intervention, improve efficiency, and enhance network security.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    2. 6G Networks: The Next Frontier
+                  </li>
+                  <li>
+                    While 5G continues to expand globally, the groundwork for 6G is already being laid. Expected to roll out by the end of the decade, 6G will offer unprecedented speeds and ultra-low latency, facilitating advancements in IoT, augmented reality, and other technologies that require high-bandwidth, real-time communication.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    3. Secure Access Service Edge (SASE): A New Security Paradigm
+                  </li>
+                  <li>
+                    As organizations embrace remote work and cloud services, the need for secure and efficient network access is paramount. SASE frameworks combine networking and security functions in the cloud, providing a holistic approach to secure network management. In 2025, SASE is becoming a cornerstone for enterprises looking to protect their distributed environments.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    4. Network Function Virtualization (NFV): Enhancing Flexibility
+                  </li>
+                  <li>
+                    NFV is revolutionizing how network services are deployed, replacing dedicated hardware with software-based solutions that run on standard servers. This trend, gaining momentum in 2025, offers greater flexibility, scalability, and cost savings, making it a preferred choice for service providers and enterprises alike.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    5. Wi-Fi 7: The Next Generation of Wireless Connectivity
+                  </li>
+                  <li>
+                    As more devices connect to networks, the demand for faster and more reliable Wi-Fi is increasing. Wi-Fi 7, expected to be widely adopted by 2025, offers enhanced performance, higher data rates, and better efficiency. This new standard is set to improve user experiences in both residential and commercial settings.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    Conclusion
+                  </li>
+                  <li>
+                    The networking sector in 2025 is at the cusp of major transformations. From network automation to the dawn of 6G and beyond, these trends are not only enhancing connectivity but also enabling new applications and services. Staying abreast of these developments will be crucial for businesses and individuals looking to leverage the full potential of the future of networking.
+                  </li>
+                </p>
+              </ul>
+            </article>
+            
+      
+            <article class="blog-post blue-text">
+              <h2 class="display-6 blue-text mb-1">Latest Trends in Web Development 2025</h2>
+              <p class="blog-post-meta">January 1, 2025 by <a href="#">Sadeeq</a></p>
+            
+              <p>The world of web development is constantly evolving, with new technologies and practices emerging that shape how websites and applications are built. As we step into 2025, several key trends are making waves in the web development space, pushing the boundaries of what’s possible online.</p>
+              <hr>
+              <ul class="list-unstyled">
+                <p>
+                  <li>
+                    1. Progressive Web Apps (PWAs): Blurring the Lines
+                  </li>
+                  <li>
+                    Progressive Web Apps are gaining momentum as they offer the best of both web and mobile apps. In 2025, PWAs are becoming the go-to solution for businesses seeking to provide a seamless, app-like experience across all devices. With offline capabilities, fast loading times, and the ability to send push notifications, PWAs are revolutionizing user engagement.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    2. Jamstack Architecture: Speed and Security
+                  </li>
+                  <li>
+                    Jamstack is changing the way websites are built, emphasizing performance, security, and scalability. By decoupling the frontend from the backend, Jamstack allows developers to use static files served from a CDN, resulting in faster load times and better security. In 2025, Jamstack is becoming a preferred choice for modern web projects.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    3. AI-Powered Development: Smarter Web Solutions
+                  </li>
+                  <li>
+                    Artificial intelligence is making its mark on web development, from AI-driven design tools to intelligent code generation. In 2025, developers are leveraging AI to streamline workflows, enhance user experience with personalized content, and automate testing processes. AI is helping to create more efficient and intuitive web applications.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    4. Web3 and Decentralized Applications (DApps)
+                  </li>
+                  <li>
+                    The rise of blockchain technology is bringing Web3 and decentralized applications to the forefront. In 2025, DApps are becoming more mainstream, offering users greater control over their data and digital identities. Web3 is redefining how we think about the internet, emphasizing privacy, security, and decentralized control.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    5. Voice Search Optimization: Catering to Conversational Queries
+                  </li>
+                  <li>
+                    With the proliferation of smart speakers and voice assistants, optimizing for voice search is becoming essential. In 2025, web developers are focusing on making websites more accessible to voice search by incorporating natural language processing (NLP) and creating content that answers conversational queries effectively. This trend is changing how content is structured and presented online.
+                  </li>
+                </p>
+                <p>
+                  <li>
+                    Conclusion
+                  </li>
+                  <li>
+                    The web development landscape in 2025 is vibrant and transformative, driven by innovations like PWAs, Jamstack, AI, and Web3. Staying current with these trends is crucial for developers and businesses aiming to create cutting-edge web experiences that meet the evolving demands of users. Embracing these advancements will be key to thriving in the future of web development.
+                  </li>
+                </p>
+              </ul>
+            </article>
+            
+      
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link blue-text" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link blue-text " href="#">1</a></li>
+                <li class="page-item"><a class="page-link blue-text" href="#">2</a></li>
+                <li class="page-item"><a class="page-link blue-text" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link blue-text" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+      
+          </div>
+      
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+              
+      
+              <div class="blue-text">
+                <h4 class="fst-italic">Recent posts</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="row g-0 border-top overflow-hidden flex-md-row h-md-250 position-relative align-items-center py-3">
+                      <div class="col-lg-4 d-none d-lg-block">
+                        <img src="../images/photo1.jpg" class="w-100 h-100" alt="...">
+                      </div>
+                      <div class="col-lg-8 p-3 position-static">
+                        <a href="#" class=" gap-1 icon-link-hover text-decoration-none stretched-link blue-text">
+                          <h6 class=" mb-0">Easy way to learn CSS</h6>
+                          <small class="fw-light">January 14, 2025</small>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row g-0 border-top overflow-hidden flex-md-row h-md-250 position-relative align-items-center py-3">
+                      <div class="col-lg-4 d-none d-lg-block">
+                        <img src="../images/photo1.jpg" class="w-100 h-100" alt="...">
+                      </div>
+                      <div class="col-lg-8 p-3 position-static">
+                        <a href="#" class=" gap-1 icon-link-hover text-decoration-none stretched-link blue-text">
+                          <h6 class=" mb-0">Secrect to learning effectively</h6>
+                          <small class="fw-light">January 10, 2025</small>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row g-0 border-top overflow-hidden flex-md-row h-md-250 position-relative align-items-center py-3">
+                      <div class="col-lg-4 d-none d-lg-block">
+                        <img src="../images/photo1.jpg" class="w-100 h-100" alt="...">
+                      </div>
+                      <div class="col-lg-8 p-3 position-static">
+                        <a href="#" class=" gap-1 icon-link-hover text-decoration-none stretched-link blue-text">
+                          <h6 class=" mb-0">Javascript arrow functions</h6>
+                          <small class="fw-light">January 08, 2025</small>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  
+                </ul>
+              </div>
+      
+              <div class="p-4">
+                <h4 class="fst-italic">Archives</h4>
+                <ol class="list-unstyled mb-0">
+                  <li><a href="#">January 2025</a></li>
+                  <li><a href="#">December 2024</a></li>
+                  <li><a href="#">November 2024</a></li>
+                  <li><a href="#">October 2024</a></li>
+                  <li><a href="#">September 2024</a></li>
+                  <li><a href="#">August 2024</a></li>
+                  <li><a href="#">July 2024</a></li>
+                  <li><a href="#">June 2024</a></li>
+                  <li><a href="#">May 2024</a></li>
+                  <li><a href="#">April 2024</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue pb-5">
+      <h1 class="h1 p-5 text-center text-white" id="portfolio">Top Contributors</h1>
+      <div class="container">
+        <div class="row row-cols-4 justify-content-between">          
+          <div class="col-3 text-center">
+            <a href="" class="text-decoration-none">
+              <img src="../images/photo1.jpg" class="img-fluid rounded" alt="">
+              <p class="text-white py-2">Muhammad Abdallah</p>
+            </a>
+          </div>
+          <div class="col-3 text-center">
+            <a href="" class="text-decoration-none">
+              <img src="../images/photo1.jpg" class="img-fluid rounded" alt="">
+              <p class="text-white py-2">Muhammad Abdallah</p>
+            </a>
+          </div>
+          <div class="col-3 text-center">
+            <a href="" class="text-decoration-none">
+              <img src="../images/photo1.jpg" class="img-fluid rounded" alt="">
+              <p class="text-white py-2">Muhammad Abdallah</p>
+            </a>
+          </div>
+          <div class="col-3 text-center">
+            <a href="" class="text-decoration-none">
+              <img src="../images/photo1.jpg" class="img-fluid rounded" alt="">
+              <p class="text-white py-2">Muhammad Abdallah</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+          <h1 class="h1 p-5 text-center blue-text m-0" id="#">Message</h1>
+          <div class="card mx-3 border-blue p-3">            
+            <form>
+              <div class="mb-3 d-flex gap-2">
+                <input type="text" class="form-control border-blue" placeholder="Name" id="recipient-name">
+                <input type="text" class="form-control border-blue" placeholder="Email" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control border-blue" style="height:120px;" placeholder="Suggesstion/ Inquiry/ Collaboration" id="message-text"></textarea>
+              </div>
+              <div class="border-0 d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </section>
+
+    <section class="my-5 pb-5 bg-blue">
+      <h1 class="h1 p-5 text-center text-white" id="#">About</h1>
+      <div class="container">
+          <div class="card p-4 border-white card-nobg">
+            <p class="card-text text-white">This blog is a space where I share my journey, insights, and experiences as a passionate web developer. It’s a place for exploring the latest trends in web development, discussing best practices, and diving into the challenges and triumphs that come with building for the web. Whether you’re a fellow developer, a designer, or someone interested in the tech world, there’s something here for you.</p>
+            <p class="card-text text-white">I started this blog to connect with others in the web development community and to provide a platform for learning and growth. You’ll find posts ranging from tutorials and coding tips to reflections on the industry and personal experiences. My goal is to make this blog a resource and a source of inspiration for anyone who shares a love for web development.</p>
+            <p class="card-text text-white">Through this blog, I hope to not only document my own progress but also to help others navigate their own paths in web development. I believe that sharing knowledge and experiences can create a stronger, more connected community, and that’s exactly what I aim to do here.</p>
+            <p class="card-text text-white">Thank you for visiting, and I hope you find value in the content shared on this blog. Whether you’re just starting out or have been in the industry for years, I’m excited to learn and grow together with you.</p>            
+          </div>
+      </div>
+  </section>
+    
+    <section>
+      <div class="container">
+        <footer class="py-3 mt-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3 border-blue">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#articles">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mentorship.html">Mentorship</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-between">
+            <p class="blue-text">© 2025 Sadeeq, Inc</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis blue-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+              </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis blue-text" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="../../../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script> -->
+</body>
+</html>
