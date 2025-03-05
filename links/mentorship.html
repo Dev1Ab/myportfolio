@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sadeeq</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 </head>
 <body>
     <section class="bg-body-primary">
-        <nav class="navbar fixed-top navbar-expand-lg bg-white" aria-label="Offcanvas navbar large">
+        <nav class="navbar fixed-top navbar-expand-lg bg-white shadow-sm" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
               <img src="../images/logo.png" height="50" alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
@@ -25,18 +26,18 @@
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav text-center justify-content-end flex-grow-1 pe-3 pb-2">
+                  <ul class="navbar-nav text-center justify-content-end flex-grow-1 pe-3 gap-3 align-items-center">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                      <a class="nav-link p-0 active" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Mentorship</a>
+                      <a class="nav-link p-0" href="#">Mentorship</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./blog.html">Blog</a>
+                      <a class="nav-link p-0" href="./blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#testimonials">Testimonials</a>
+                      <a class="nav-link p-0" href="#testimonials">Testimonials</a>
                     </li>
                   </ul>
                   <div class=""> 
@@ -50,12 +51,12 @@
 
     <section class="triangle-par">
       <div class="triangle-text px-4 py-5 my-5 text-center">
-        <h1 class="h1 fw-bold text-body-emphasis blue-text pt-5">Welcome! Glad to have you hear</h1>
+        <h1 class="fw-bold text-body-emphasis blue-text pt-5"><span id="typed-output"></span></h1>
         <div class="col-lg-6 text-center w-100">
           <p class="blue-text mb-4 lead">Let me guide you through your journey. I aimed at pulling the best out of you.</p>
         </div>
       </div>
-      <div class="triangle"></div>
+      <div class="triangle animate__animated animate__slideInUp"></div>
     </section>
 
     <!-- Contact me toggle form -->
@@ -108,13 +109,13 @@
                       <input type="text" class="form-control form-control-white border-white " placeholder="Email" id="recipient-name">
                     </div>
                     <div class="mb-3 d-flex gap-2">
-                      <select name="" class="form-select" id="">
-                        <option value="Mentorship type" selected>Mentorship type</option>
+                      <select name="" class="form-select blue-text" id="">
+                        <option value="Mentorship type" disabled selected>Mentorship type</option>
                         <option value="Full-time">Fulltime</option>
                         <option value="One-on-one">One-on-one</option>
                       </select>
-                      <select name="" class="form-select" id="">
-                        <option value="Outcome" selected>Outcome</option>
+                      <select name="" class="form-select blue-text" id="">
+                        <option value="Outcome" disabled selected>Outcome</option>
                         <option value="Full-time">Fulltime</option>
                         <option value="One-on-one">One-on-one</option>
                       </select>
@@ -221,7 +222,19 @@
 
   
 
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module">
+      document.addEventListener('DOMContentLoaded', function() {
+        var options = {
+          strings: ["Welcome! Glad to have you hear "],
+          typeSpeed: 50,
+          // bacsmartBackspace: true,
+          loop: true
+        };
+    
+        var typed = new Typed("#typed-output", options);
+      });
+    </script>
     <script src="../../../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </body>
